@@ -5,32 +5,6 @@ This is a sample project that demonstrates CRUD (Create, Read, Update, Delete) o
 ## File Structure
 
 The project follows a specific file structure to organize the code and resources effectively. Here's an overview of the file structure:
-
-├── src
-│ ├── assets
-│ ├── components
-│ │ ├── EditModal
-│ │ │ ├── index.js
-│ │ │ ├── style.scss
-│ │ ├── Layout
-│ │ │ ├── index.js
-│ │ │ ├── style.scss
-│ │ ├── UserList
-│ │ │ ├── index.js
-│ │ │ ├── style.scss
-│ ├── store
-│ │ ├── reducer
-│ │ │ ├── UserList
-│ │ │ │ ├── APIs.js
-│ │ │ │ ├── userListReducer.js
-│ │ ├── index.js
-│ ├── App.js
-│ ├── index.js
-├── public
-│ ├── index.html
-├── package.json
-├── README.md
-
 - `src/components`: This directory contains React components used in the application.
 
   - `EditModal`
@@ -83,13 +57,14 @@ To run the project locally, follow these steps:
 ## Technologies Used
 
 - React
+- Node-SASS
 - Redux Toolkit
 - Fetch (for API requests)
 - Local storage (for storing user data)
 
 ## Live Demo
 
-- [Visit the live demo website](https://crud-operation-rosy.vercel.app)
+- [Visit the live demo website](https://crud-operation-muhammadzubairmoosani.vercel.app/)
 
 ## License
 
