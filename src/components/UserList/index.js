@@ -20,13 +20,8 @@ export const UserList = () => {
     setModal(true);
   };
 
-  const handleDelete = (userId) => {
-    dispatch(deleteUser(userId));
-  };
-
-  const handleSort = (field) => {
-    dispatch(toggleSortOrder(field));
-  };
+  const handleDelete = (userId) => dispatch(deleteUser(userId));
+  const handleSort = (field) => dispatch(toggleSortOrder(field));
 
   const getMessage = (message) => (
     <div className="message">
