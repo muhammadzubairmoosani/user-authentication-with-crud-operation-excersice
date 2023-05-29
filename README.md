@@ -11,10 +11,10 @@ The project follows a specific file structure to organize the code and resources
     - `index.js`: Component for edit, and adding a new user.
     - `style.scss`: File for styling.
   - `Layout`
-    - `index.js`: Component for edit, and adding a new user.
+    - `index.js`: Component for root-layout.
     - `style.scss`: File for styling.
   - `UserList`
-    - `index.js`: Component for edit, and adding a new user.
+    - `index.js`: Component for user list.
     - `style.scss`: File for styling.
 
 - `src/store`: This directory contains Redux-related code.
