@@ -12,6 +12,7 @@ export const updateUser = createAsyncThunk(
   "userList/updateUser",
   async (user) => {
     // Update the user in localStorage
+    console.log("method user", user);
     const userList = JSON.parse(localStorage.getItem("userList") || "[]");
     const updatedUserList = userList.map((u) => (u.id === user.id ? user : u));
     localStorage.setItem("userList", JSON.stringify(updatedUserList));

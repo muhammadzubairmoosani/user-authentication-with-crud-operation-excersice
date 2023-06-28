@@ -5,37 +5,35 @@ This is a sample project that demonstrates CRUD (Create, Read, Update, Delete) o
 ## File Structure
 
 The project follows a specific file structure to organize the code and resources effectively. Here's an overview of the file structure:
-- `src/components`: This directory contains React components used in the application.
 
-  - `EditModal`
-    - `index.js`: Component for edit, and adding a new user.
-    - `style.scss`: File for styling.
-  - `Layout`
-    - `index.js`: Component for root-layout.
-    - `style.scss`: File for styling.
-  - `UserList`
-    - `index.js`: Component for user list.
-    - `style.scss`: File for styling.
+- `src` -`assets`: This directory contains all assets. -`components`: This directory contains React components used in the application.
 
-- `src/store`: This directory contains Redux-related code.
-
-  - `userReducer`
-    - `userListSlice.js`: Redux slice for managing the user list state and actions.
-
-- `src/services`: This directory contains utility functions and services.
-
-  - `api.js`: Service for making API calls (fetching user list).
-  - `localStorage.js`: Service for interacting with local storage (adding, updating, and deleting users).
-
-- `src/App.js`: The main component of the application, where other components are rendered.
-
-- `src/index.js`: The entry point of the application.
-
-- `public/index.html`: The HTML template file for the application.
-
-- `package.json`: The package configuration file for managing dependencies and scripts.
-
-- `sass.config.js`: The node-sass configuration file for managing .scss extension files.
+  - `authProvider.jsx`: Component for user route authentication.
+  - `emptyUserList.jsx`: Component for empty user list.
+  - `layout.jsx`: Component for root-layout.
+  - `loader.jsx`: Component for linear loader.
+  - `login.jsx`: Component for user login.
+  - `modal.jsx`: Component for edit, and adding a new user.
+  - `pageNotFound.jsx`: Component for page not found.
+  - `userList.jsx`: Component for user list.
+  - `services`: This directory contains utility functions and services.
+    - `api.js`: Service for making API calls (fetching user list).
+    - `auth.js`: Firebaes auth methods (e.g. signIn, signUp).
+    - `firebase_config.js`: Firebase App and Auth configuration.
+    - `index.js`: Export point.
+    - `localStorage.js`: Service for interacting with local storage (adding, updating, and deleting users).
+  - `store`: This directory contains Redux-related code.
+    - `UserReducer`
+      - `userListSlice.js`: Redux slice for managing the user list state and actions.
+      - `authSlice.js`: Redux slice for managing the auth user state and actions.
+      - `index.js`: Export point.
+  - `utils`: This directory contains utilities.
+    - `userList.js`: Dummy user list.
+  - `App.js`: The main component of the application, where other components are rendered.
+  - `index.js`: The entry point of the application.
+  - `public/index.html`: The HTML template file for the application.
+  - `package.json`: The package configuration file for managing dependencies and scripts.
+  - `sass.config.js`: The node-sass configuration file for managing .scss extension files.
 
 ## Setup and Usage
 
@@ -60,6 +58,7 @@ To run the project locally, follow these steps:
 - Node-SASS
 - Redux Toolkit
 - Fetch (for API requests)
+- Firebase (for user auththentication)
 - Local storage (for storing user data)
 
 ## Live Demo

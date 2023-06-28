@@ -10,7 +10,7 @@ export const fetchUserList = createAsyncThunk(
       localStorage.setItem("userList", JSON.stringify(data));
       return data;
     } catch (error) {
-      console.log(error);
+      throw new Error(error.message);
     }
   }
 );
