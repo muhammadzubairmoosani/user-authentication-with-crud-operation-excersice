@@ -6,16 +6,17 @@ This is a sample project that demonstrates CRUD (Create, Read, Update, Delete) o
 
 The project follows a specific file structure to organize the code and resources effectively. Here's an overview of the file structure:
 
-- `src` -`assets`: This directory contains all assets. -`components`: This directory contains React components used in the application.
-
-  - `authProvider.jsx`: Component for user route authentication.
-  - `emptyUserList.jsx`: Component for empty user list.
-  - `layout.jsx`: Component for root-layout.
-  - `loader.jsx`: Component for linear loader.
-  - `login.jsx`: Component for user login.
-  - `modal.jsx`: Component for edit, and adding a new user.
-  - `pageNotFound.jsx`: Component for page not found.
-  - `userList.jsx`: Component for user list.
+- `src`
+  - `assets`: This directory contains all assets.
+  - `components`: This directory contains React components used in the application.
+    - `authProvider.jsx`: Component for user route authentication.
+    - `emptyUserList.jsx`: Component for empty user list.
+    - `layout.jsx`: Component for root-layout.
+    - `loader.jsx`: Component for linear loader.
+    - `login.jsx`: Component for user login.
+    - `modal.jsx`: Component for edit, and adding a new user.
+    - `pageNotFound.jsx`: Component for page not found.
+    - `userList.jsx`: Component for user list.
   - `services`: This directory contains utility functions and services.
     - `api.js`: Service for making API calls (fetching user list).
     - `auth.js`: Firebaes auth methods (e.g. signIn, signUp).
